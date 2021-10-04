@@ -11,19 +11,62 @@ body {
     background: #f1f1f1;
 }
 
+.cercle-portrait{
+
+    margin-top : 30px;
+    color : #008b74;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.cercle-portrait img{
+    width:100px;
+    height: 100px;
+}
+
+.blocs-menu img{
+    width:100px;
+    height: 100px;
+}
+
+.logo-cercle{
+    margin-bottom:270px;
+}
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
     width: 300px;
     height: 100vh;
     min-height: 800px;
-    background: #333;
+    background: #00c2ab;
     position: fixed;
-    top: 0;
-    left: -300px;
+    top: 0px;
+    left: 0px;
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
+    
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+.blocs-menu{
+
+    margin:20px auto;
+    
+}
+a{
+    text-decoration: none;
+    color: #1a6658;
 }
 
 
@@ -38,6 +81,7 @@ body {
     width: calc(100% - 300px);
     margin-left: auto;
     position: relative;
+    border-bottom: dashed 2px #333;
 }
 h1 {
     font-size: 90px;
@@ -116,4 +160,9 @@ h1 {
 }
 .logo-btn-rond-acc {
     width: 35px;
+}
+
+.presentation,.portfolio,.section-range,.section-contact,.travail-exp{
+    width: 100%;
+    margin-left:310px;
 }

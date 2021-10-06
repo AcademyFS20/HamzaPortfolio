@@ -20,6 +20,12 @@ body {
 
 }
 
+@media screen and (max-width: 998px) {
+    .accueil h1{
+        visibility: hidden;
+    }
+}
+
 .cercle-portrait img{
     width:100px;
     height: 100px;
@@ -34,6 +40,54 @@ body {
     margin-bottom:270px;
 }
 
+
+.burger{
+
+    width:75px;
+    height:75px;
+    background-color: lightblue;
+    border-radius: 50%;
+    z-index:10;
+    position: absolute;
+    margin : 15px;
+    transform: translateY(30px);
+    
+    
+}
+
+.line {
+
+   position: absolute;
+   width:70%;
+   height:6px;
+   top:16px;
+   left: 9px;
+   background-color: black;
+}
+
+.cont::before{
+
+    content:'';
+    width:100%;
+    position: absolute;
+    height:6px;
+    top:16px;
+    background-color: black;
+
+}
+
+.cont::after{
+
+    content:'';
+    width:100%;
+    position: absolute;
+    height:6px;
+    top:32px;
+    background-color: black;
+
+}
+
+
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
     width: 300px;
@@ -44,7 +98,7 @@ body {
     top: 0px;
     left: 0px;
     border-right: 1px dashed #f1f1f1;
-    z-index: 5;
+    z-index: -1;
     transition: all 0.2s ease-in-out;
     
     display: flex;
